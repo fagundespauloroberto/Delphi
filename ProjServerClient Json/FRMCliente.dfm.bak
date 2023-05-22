@@ -1,0 +1,242 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 418
+  ClientWidth = 924
+  Color = clBtnFace
+  CustomTitleBar.CaptionAlignment = taCenter
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Label1: TLabel
+    Left = 8
+    Top = 18
+    Width = 34
+    Height = 15
+    Caption = 'Label1'
+  end
+  object Get: TButton
+    Left = 8
+    Top = 97
+    Width = 75
+    Height = 25
+    Caption = 'Get'
+    TabOrder = 0
+    OnClick = GetClick
+  end
+  object Post: TButton
+    Left = 94
+    Top = 97
+    Width = 75
+    Height = 25
+    Caption = 'Post'
+    TabOrder = 1
+    OnClick = PostClick
+  end
+  object Put: TButton
+    Left = 296
+    Top = 97
+    Width = 75
+    Height = 25
+    Caption = 'Put'
+    TabOrder = 2
+    OnClick = PutClick
+  end
+  object Delete: TButton
+    Left = 392
+    Top = 97
+    Width = 75
+    Height = 25
+    Caption = 'Delete'
+    TabOrder = 3
+    OnClick = DeleteClick
+  end
+  object Consultar: TButton
+    Left = 175
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = 'Consultar'
+    TabOrder = 4
+  end
+  object Edit1: TEdit
+    Left = 48
+    Top = 8
+    Width = 121
+    Height = 23
+    TabOrder = 5
+    Text = 'Edit1'
+  end
+  object Edit2: TEdit
+    Left = 48
+    Top = 37
+    Width = 121
+    Height = 23
+    TabOrder = 6
+    Text = 'Edit2'
+  end
+  object Memo1: TMemo
+    Left = 473
+    Top = 74
+    Width = 435
+    Height = 289
+    Lines.Strings = (
+      'Memo1')
+    TabOrder = 7
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 128
+    Width = 459
+    Height = 235
+    DataSource = DataSource1
+    TabOrder = 8
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -12
+    TitleFont.Name = 'Segoe UI'
+    TitleFont.Style = []
+  end
+  object Edit3: TEdit
+    Left = 48
+    Top = 68
+    Width = 121
+    Height = 23
+    TabOrder = 9
+    Text = 'Edit3'
+  end
+  object RESTClient1: TRESTClient
+    Params = <>
+    SynchronizedEvents = False
+    Left = 344
+    Top = 16
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 448
+    Top = 8
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 560
+    Top = 16
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 728
+    Top = 336
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTable1
+    ScopeMappings = <>
+    Left = 600
+    Top = 328
+  end
+  object FDMemTable1: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'error'
+        DataType = ftWideString
+        Size = 255
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvPersistent, rvSilentMode]
+    ResourceOptions.Persistent = True
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable, uvAutoCommitUpdates]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 696
+    Top = 168
+    Content = {
+      414442531000000088010000FF00010001FF02FF03040016000000460044004D
+      0065006D005400610062006C0065003100050016000000460044004D0065006D
+      005400610062006C0065003100060000000000070000080032000000090000FF
+      0AFF0B04000A0000006500720072006F00720005000A0000006500720072006F
+      0072000C00010000000E000D000F00FF00000010000111000112000113000114
+      000115000116000A0000006500720072006F0072001700FF000000FEFEFF18FE
+      FF19FEFF1AFF1B1C0000000000FF1D00009E00000049006E00760061006C0069
+      00640020007200650071007500650073007400200066006F0072006D00610074
+      002E0020002F0063006C006100730073004E0061006D0065002F006D00650074
+      0068006F0064004E0061006D006500200061006E00640020006500760065006E
+      007400750061006C00200070006100720061006D006500740065007200730020
+      00650078007000650063007400650064002E00FEFEFEFEFEFF1EFEFF1F200020
+      000000FF21FEFEFE0E004D0061006E0061006700650072001E00550070006400
+      6100740065007300520065006700690073007400720079001200540061006200
+      6C0065004C006900730074000A005400610062006C00650008004E0061006D00
+      6500140053006F0075007200630065004E0061006D0065000A00540061006200
+      49004400240045006E0066006F0072006300650043006F006E00730074007200
+      610069006E00740073001E004D0069006E0069006D0075006D00430061007000
+      61006300690074007900180043006800650063006B004E006F0074004E007500
+      6C006C00140043006F006C0075006D006E004C006900730074000C0043006F00
+      6C0075006D006E00100053006F00750072006300650049004400180064007400
+      570069006400650053007400720069006E006700100044006100740061005400
+      7900700065000800530069007A00650014005300650061007200630068006100
+      62006C006500120041006C006C006F0077004E0075006C006C00080042006100
+      7300650014004F0041006C006C006F0077004E0075006C006C0012004F004900
+      6E0055007000640061007400650010004F0049006E0057006800650072006500
+      1A004F0072006900670069006E0043006F006C004E0061006D00650014005300
+      6F007500720063006500530069007A0065001C0043006F006E00730074007200
+      610069006E0074004C00690073007400100056006900650077004C0069007300
+      74000E0052006F0077004C00690073007400060052006F0077000A0052006F00
+      77004900440010004F0072006900670069006E0061006C001800520065006C00
+      6100740069006F006E004C006900730074001C00550070006400610074006500
+      73004A006F00750072006E0061006C001200530061007600650050006F006900
+      6E0074000E004300680061006E00670065007300}
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Active = True
+    Dataset = FDMemTable1
+    FieldDefs = <>
+    Response = RESTResponse2
+    Left = 432
+    Top = 368
+  end
+  object RESTClient2: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'http://localhost:211/datasnap/rest/TServerMethods1'
+    ContentType = 'application/json'
+    Params = <
+      item
+        ContentTypeStr = 'application/octet-stream'
+      end>
+    SynchronizedEvents = False
+    Left = 48
+    Top = 368
+  end
+  object RESTRequest2: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTClient2
+    Params = <
+      item
+      end>
+    Response = RESTResponse2
+    SynchronizedEvents = False
+    Left = 160
+    Top = 368
+  end
+  object RESTResponse2: TRESTResponse
+    ContentType = 'text/HTML'
+    Left = 272
+    Top = 368
+  end
+  object DataSource1: TDataSource
+    DataSet = FDMemTable1
+    Left = 688
+    Top = 96
+  end
+end
